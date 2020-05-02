@@ -171,7 +171,7 @@ body {
 
 .page-footer {
   padding: 40px 0;
-  background-color: #00417d;
+  background-color: rgb(2, 189, 234);
   color: #ffffff;
 }
 
@@ -191,4 +191,145 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
+}
+
+.intro .container img {
+  border: 5px solid black;
+}
+
+.my-info {
+  display: flex;
+  /*flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  */
+  text-align: center;  
+  width: 100%;
+}
+
+
+.my-info h3:hover{
+  text-decoration: underline;
+  border-bottom: 2px solid black;
+
+}
+
+.my-info h3 {
+  min-height: 100px;
+}
+.my-info > div {
+  margin-right: 20px;
+  border: 2px solid black;
+  flex:1;
+  
+}
+
+.question-mark {
+  display: none;
+}
+
+h2.subheading:hover .question-mark {
+  display: inline;
+}
+
+h2.subheading:hover {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.main-competencies {
+  
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.main-competencies > div {
+  margin-right: 40px;
+  flex: 1;
+  border: 2px solid black;
+}
+.main-competencies i {
+  size: 5x;
+  margin-right: 10px;
+}
+
+.container.competencies {
+  margin-top: 40px;
+}
+
+.main-competencies h3 {
+  min-height: 100px;
+}
+
+.main-competencies h3:hover{
+  text-decoration: underline;
+  border-bottom: 2px solid black;
+
+}
+
+a.btn {
+  background-color: rgb(2, 189, 234);
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+a.btn:hover {
+  background-color: blue;
+}
+
+
+.header-info {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-info:hover a{
+  color: blue;
+}
+
+.footer-info div {
+  
+}
+
+.collapsible {
+  background-color: rgb(2, 189, 234);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: blue;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.portfolio-hobby-list {
+  list-style-type: none;
 }
