@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+    background-color:  rgb(235, 246, 249);
+  }
+  
+  .flex-container-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  
+  .col {
+    flex: 1;
+    padding: 20px;
+  
+  }
+  
+  section {
+    margin-bottom: 50px;
+  }
+  
+  .main-header {
+    color: black; 
+  }
+  
+  
+  .main-header a {
+    text-decoration: none;
+  }
+  
+  .main-header .flex-container-row {
+    text-align: center;
+  }
+  
+  
+  .main-header-headline {
+    background-image: url('море.jpg');
+    background-size: cover;
+    min-height: 800px;
+    width: 100%;
+  }
+  
+  section .flex-container-row{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  section > .flex-container-row{
+    background-color:  rgb(235, 246, 249);
+  }
+  
+  section .flex-container-row h1 {
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif
+  }
+  
+  .main-promo .flex-container-row p {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h2{
+    text-align: center;
+    font-size: 3em;
+  }
+  
+  h2::before {
+    content: '|';
+    display: none;
+    opacity: 0.5;
+  }
+  
+  h2:hover::before {
+    content: '|';
+    display: inline;
+  }
+  
+  h2::after {
+    content: '|';
+    display: none;
+    opacity: 0.5;
+  }
+  
+  h2:hover::after {
+    content: '|';
+    display: inline;
+  }
+  
+  a.btn {
+    background-color: rgb(118, 193, 213);
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+  }
+  
+  a.btn:hover {
+    background-color: blue;
+  }
+  
+  
+  .collapsible {
+    display: block;
+    color: white;
+    padding: 10px;
+    background-color: rgb(118, 193, 213);
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .main-hobby-content {
+    display: none;
+    padding: 0 15px;
+    overflow: hidden;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 2px solid black;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: blue;
+  }
+  
+  .main-hobby-list {
+    list-style-type: none;
+  }
+  
+  .main-hobby button:not(:nth-of-type(1)) {
+    margin-top: -2px;
+  }
+  
+  .main-header .col p, .main-footer .col p{
+    font-weight: bold;
+  }
+  .col p a {
+    font-weight: normal;
+  }
+  
+  .main-hobby-list-item h3 {
+    font-style: normal;
+  }
+  
+  ul li {
+    text-align: left;
+    font-style: italic;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .flex-container-row {
+      flex-direction: column;
+    }
+  
+    .main-header .flex-container-row {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .main-promo .flex-container-row p {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  }
+}
