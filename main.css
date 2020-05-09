@@ -19,7 +19,10 @@
   .col {
     flex: 1;
     padding: 20px;
-  
+  }
+
+  .col h3 {
+    margin: 0px;
   }
   
   section {
@@ -52,7 +55,37 @@
     align-items: center;
     text-align: center;
   }
-  
+
+  section.main-about-me .flex-container-row {
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  section .flex-container-row h3{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+
+  section.main-skills .flex-container-row{
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  section.main-skills .flex-container-row  .col{
+    height: 320px;
+    position: relative;
+  }
+
+  section.main-skills .flex-container-row  .col a.btn {
+    position: absolute;
+    bottom: 5px;
+    left: 25%;
+    right: 25%;
+  }
+
   section > .flex-container-row{
     background-color:  rgb(235, 246, 249);
   }
@@ -159,6 +192,10 @@
   @media screen and (max-width: 900px) {
     .flex-container-row {
       flex-direction: column;
+    }
+
+    .flex-container-row .col {
+        width: 100%;
     }
   
     .main-header .flex-container-row {
